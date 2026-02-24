@@ -34,7 +34,7 @@ p {
 }
 
 /* ul, kolonne 2 og 3 */
-.kategorier {
+.category_list_container {
     grid-column: 2 / 4;
     list-style: none;
     display: grid;
@@ -42,10 +42,6 @@ p {
     gap: 8px;
 }
 
-/* li fylder hele sin celle ud */
-.kategorier li {
-    display: flex;
-}
 
 /* a, kategorikortet */
 .kategori-card {
