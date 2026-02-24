@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(251, 241, 229);
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: start;
+    font-size: 35;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: start;
+    font-size: 30;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.sæsoner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 10px;
+}
+
+/* h1, kolonne 1, row 1 */
+.card-title {
+    grid-column: 1;
+}
+
+/* ul, kolonne 2 og 3 */
+.kategorier {
+    grid-column: 2 / 4;
+    list-style: none;
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: 8px;
+}
+
+/* li fylder hele sin celle ud */
+.kategorier li {
+    display: flex;
+}
+
+/* a, kategorikortet */
+.kategori-card {
+    font-family: 'Courier New', Courier, monospace;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    min-width: 150px;
+    background: #000000;
+    color: #d5d4d4;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 12px; 
+}
