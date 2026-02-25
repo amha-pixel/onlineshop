@@ -1,0 +1,73 @@
+/* ════════════════════════════════════════════════
+   global.css
+   Delte regler der bruges på ALLE sider
+   ════════════════════════════════════════════════ */
+
+/* ─── RESET & BASE ──────────────────────────────── */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(251, 241, 229);
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: start;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: start;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+/* ─── HEADER / MENU ─────────────────────────────── */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid #cccccc;
+    background: rgb(251, 241, 229);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+}
+
+.site-nav a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #888888;
+    margin-left: 20px;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+/* ─── HJÆLPEKLASSE ──────────────────────────────── */
+
+/* Skjuler elementer – fjernes dynamisk via JavaScript senere */
+.skjult {
+    display: none;
+}

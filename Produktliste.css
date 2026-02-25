@@ -1,0 +1,149 @@
+/* ════════════════════════════════════════════════
+   produktliste.css
+   Styles til produktliste.html
+   Husk at linke BEGGE filer i produktliste.html:
+   <link rel="stylesheet" href="global.css">
+   <link rel="stylesheet" href="produktliste.css">
+   ════════════════════════════════════════════════ */
+
+/* ─── FORSIDEN: SÆSONER / KATEGORIER ───────────── */
+
+.sæsoner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 10px;
+}
+
+.card-title {
+    grid-column: 1;
+}
+
+.category_list_container {
+    grid-column: 2 / 4;
+    list-style: none;
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: 8px;
+}
+
+.kategori-card {
+    font-family: 'Courier New', Courier, monospace;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    min-width: 150px;
+    background: rgb(251, 241, 229);
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #cccccc;
+}
+
+/* ─── PRODUKTLISTE ──────────────────────────────── */
+
+.product_list_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 24px;
+}
+
+.produkt-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+    width: 200px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 12px;
+    gap: 4px;
+}
+
+.produkt-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.produkt-card-type {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    color: #888888;
+    margin-top: 8px;
+}
+
+.produkt-card-navn {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.produkt-card-pris {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.produkt-card-link {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    color: #888888;
+    text-decoration: underline;
+    margin-top: auto; /* Skubber "Read More" til bunden af kortet */
+}
+
+/* ─── RABAT / NEDSAT PRIS ───────────────────────── */
+
+/* Wrapper når der er rabat */
+.produkt-card-pris.nedsat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* Den overstregede originalpris */
+.produkt-card-pris-original {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: line-through;
+    color: #999999;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+/* Den nedsatte pris i rød */
+.produkt-card-pris.nedsat span:last-child {
+    color: #c0392b;
+    font-weight: 700;
+}
+
+/* ─── UDSOLGT ───────────────────────────────────── */
+
+/* Selve udsolgt-badget */
+.udsolgt {
+    font-family: 'Courier New', Courier, monospace;
+    background: #c0392b;
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin-top: 4px;
+}
+
+/* Gør hele kortet visuelt dæmpet når produktet er udsolgt */
+.udsolgt-card {
+    opacity: 0.6;
+}
+
+/* Forhindrer klik-cursor på udsolgte kort */
+.udsolgt-card:hover {
+    cursor: not-allowed;
+}

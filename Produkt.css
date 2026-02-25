@@ -1,0 +1,215 @@
+/* ════════════════════════════════════════════════
+   produkt.css
+   Styles til produkt.html
+   Husk at linke BEGGE filer i produkt.html:
+   <link rel="stylesheet" href="global.css">
+   <link rel="stylesheet" href="produkt.css">
+   ════════════════════════════════════════════════ */
+
+/* ─── BREADCRUMB ────────────────────────────────── */
+
+.breadcrumb {
+    padding: 12px 24px;
+    font-size: 0.8rem;
+    color: #888888;
+}
+
+.breadcrumb a {
+    color: #888888;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    margin: 0 6px;
+}
+
+/* ─── PRODUKT LAYOUT ────────────────────────────── */
+
+/*
+    To-kolonne grid: billede til venstre, info til højre.
+    Falder til én kolonne på små skærme.
+*/
+.produkt-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+
+@media (max-width: 600px) {
+    .produkt-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ─── BILLEDE ───────────────────────────────────── */
+
+.produkt-billede-wrapper {
+    position: relative;
+}
+
+.produkt-billede-wrapper img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+}
+
+/* Udsolgt-banner henover billedet */
+.udsolgt-banner {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    background: #c0392b;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 0 4px 4px 0;
+    letter-spacing: 0.05em;
+}
+
+/* ─── PRODUKT INFO ──────────────────────────────── */
+
+.produkt-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.produkt-brand {
+    font-size: 0.85rem;
+    color: #888888;
+}
+
+.produkt-navn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.produkt-type {
+    font-size: 0.8rem;
+    color: #888888;
+}
+
+/* ─── DIVIDER ───────────────────────────────────── */
+
+.divider {
+    border: none;
+    border-top: 1px solid #cccccc;
+}
+
+/* ─── PRIS ──────────────────────────────────────── */
+
+.produkt-pris-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Normalprisen */
+.produkt-pris {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* Originalprisen overstreget – kun synlig når "har-rabat" er aktiv */
+.produkt-pris-original {
+    font-size: 1rem;
+    color: #999999;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+/* Rabatbadge fx "-37%" */
+.rabat-badge {
+    background: #c0392b;
+    color: white;
+    font-size: 0.75rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+/* Når produktet har rabat: farv den nedsatte pris rød */
+.har-rabat .produkt-pris {
+    color: #c0392b;
+}
+
+/* ─── PRODUKTDETALJER ───────────────────────────── */
+
+.produkt-detaljer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.detalje-række {
+    display: flex;
+    gap: 8px;
+}
+
+.detalje-label {
+    color: #888888;
+    min-width: 120px;
+}
+
+.detalje-value {
+    font-weight: 600;
+}
+
+/* ─── BESKRIVELSE ───────────────────────────────── */
+
+.produkt-beskrivelse {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #444444;
+}
+
+/* ─── KØB-KNAP ──────────────────────────────────── */
+
+.koeb-knap {
+    font-family: 'Courier New', Courier, monospace;
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: background 0.2s;
+}
+
+.koeb-knap:hover {
+    background: #333333;
+}
+
+/* Deaktiveret knap ved udsolgt */
+.koeb-knap:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+/* ─── TILBAGE LINK ──────────────────────────────── */
+
+.tilbage-link {
+    display: inline-block;
+    margin: 0 24px 32px 24px;
+    font-size: 0.85rem;
+    color: #888888;
+    text-decoration: underline;
+}
+
+.tilbage-link:hover {
+    color: #000000;
+}
