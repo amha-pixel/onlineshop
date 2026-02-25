@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Soft Sports Shoes – FashionRUs</title>
+    <link rel="stylesheet" href="produkt.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <a href="index.html" class="logo">FashionЯUs</a>
+        <nav class="site-nav">
+            <a href="index.html">Seasons</a>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <!-- Stier bygges dynamisk senere via data-field attributter -->
+    <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <a href="produktliste.html" data-field="season">Fall</a>
+        <span>›</span>
+        <a href="produktliste.html" data-field="category">Footwear</a>
+        <span>›</span>
+        <span data-field="productdisplayname">Super Soft Sports Shoes</span>
+    </nav>
+
+    <!-- PRODUKT
+         data-id        → produktets unikke ID fra API
+         data-soldout   → 0 = ikke udsolgt, 1 = udsolgt
+         data-discount  → rabatprocent (null hvis ingen rabat)
+         data-season    → hvilken sæson produktet tilhører
+    -->
+    <main class="produkt-container"
+          data-id="1571"
+          data-soldout="0"
+          data-discount="37"
+          data-season="Fall">
+
+        <!-- VENSTRE: Billede -->
+        <div class="produkt-billede-wrapper">
+
+            <img
+                src="img/1571.webp"
+                alt="Super Soft Sports Shoes"
+                data-relid="1571">
+
+            <!-- Udsolgt-banner: fjern "skjult" hvis soldout = 1 -->
+            <span class="udsolgt-banner skjult" data-field="soldout">Udsolgt</span>
+
+        </div>
+
+        <!-- HØJRE: Produktinfo -->
+        <div class="produkt-info">
+
+            <p class="produkt-brand" data-field="brandname">Kalenji</p>
+
+            <h1 class="produkt-navn" data-field="productdisplayname">
+                Super Soft Sports Shoes
+            </h1>
+
+            <p class="produkt-type">
+                <span data-field="subcategory">Shoes</span> ·
+                <span data-field="articletype">Sports Shoes</span>
+            </p>
+
+            <hr class="divider">
+
+            <!-- PRIS
+                 Klassen "har-rabat" tilføjes når discount != null.
+                 Nedsat pris beregnet: 1199 - 37% = 755,-
+                 Fjern "har-rabat" og .produkt-pris-original hvis ingen rabat.
+            -->
+            <div class="produkt-pris-wrapper har-rabat">
+                <span class="produkt-pris-original" data-field="original_price">DKK 1.199,-</span>
+                <span class="produkt-pris" data-field="price">DKK 755,-</span>
+                <span class="rabat-badge" data-field="discount">-37%</span>
+            </div>
+
+            <hr class="divider">
+
+            <!-- Produktdetaljer -->
+            <div class="produkt-detaljer">
+
+                <div class="detalje-række">
+                    <span class="detalje-label">Farve</span>
+                    <span class="detalje-value" data-field="basecolour">White</span>
+                </div>
+
+                <div class="detalje-række">
+                    <span class="detalje-label">Målgruppe</span>
+                    <span class="detalje-value" data-field="agegroup">Adults-Men</span>
+                </div>
+
+                <div class="detalje-række">
+                    <span class="detalje-label">Anvendelse</span>
+                    <span class="detalje-value" data-field="usagetype">Sports</span>
+                </div>
+
+                <div class="detalje-række">
+                    <span class="detalje-label">Produktionsår</span>
+                    <span class="detalje-value" data-field="productionyear">2010</span>
+                </div>
+
+                <div class="detalje-række">
+                    <span class="detalje-label">Varenummer</span>
+                    <span class="detalje-value" data-field="id">1571</span>
+                </div>
+
+            </div>
+
+            <hr class="divider">
+
+            <!-- Beskrivelse -->
+            <p class="produkt-beskrivelse" data-field="description">
+                Side synthetic bands for support. Nylon mesh upper for excellent ventilation.
+                Lightweight injection-moulded EVA foam midsole for shock absorption and cushioning.
+                Run, jog, stroll or walk in these lightweight shoes and you will still be super
+                relaxed at the end of each round!
+            </p>
+
+            <!-- Køb-knap: tilføj disabled hvis soldout = 1 -->
+            <button class="koeb-knap" data-field="soldout">
+                Læg i kurv
+            </button>
+
+        </div>
+    </main>
+
+    <a href="produktliste.html" class="tilbage-link">← Tilbage til produktliste</a>
+
+</body>
+</html>
