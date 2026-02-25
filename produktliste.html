@@ -3,16 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Onlineshop - kategorier</title>
+        <title>FashionRUs - Categories</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header></header>
 
         <header class="site-header">
-            <a href="index.html" class="logo">OnlineShop</a>
+            <a href="index.html" class="logo">FashionRUs</a>
             <nav class="site-nav">
-                <a href="index.html">Kategorier</a>
+                <a href="index.html">Categories</a>
+                <a href="produkt.html">Product</a>
             </nav>
         </header>
         <main>
@@ -25,27 +26,29 @@
                    data-season="Fall"
                    data-soldout="0"
                    data-discount="36">
-            
+                
                     <img src="img/1570.webp" alt="Women Tennis Singlet" data-relid="1570">
-            
+                
                     <p class="produkt-card-type">
                         <span data-field="articletype">Tshirts</span> | 
                         <span data-field="brandname">Artengo</span>
                     </p>
-            
+                
                     <h2 class="produkt-card-navn" data-field="productdisplayname">
                         Women Tennis Singlet
                     </h2>
-            
-                    <!-- Viser både original og nedsat pris -->
-                    <p class="produkt-card-pris nedsat">
-                        <span class="produkt-card-pris-original" data-field="original_price">DKK 999,-</span>
-                        <span data-field="price">DKK 639,-</span>
+                
+                    <!-- Viser kun normalprisen -->
+                    <p class="produkt-card-pris" data-field="price">
+                        DKK 999,-
                     </p>
-            
+                
+                    <!-- Rabatpris gemt i dataen men usynlig -->
+                    <span class="skjult" data-field="discounted_price">DKK 639,-</span>
+                
                     <!-- Udsolgt badge: skjult fordi soldout = 0 -->
                     <span class="udsolgt skjult" data-field="soldout">Udsolgt</span>
-            
+                
                     <span class="produkt-card-link">Read More</span>
                 </a>
             
