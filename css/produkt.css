@@ -214,7 +214,7 @@
     color: #000000;
 }
 
-/* ─── OVERRULE at API'ets HTML overskriver min CSS med sine egne <strong> og <p> tags  ──────────────────────────────── */
+/* ─── Overrule at API'ets HTML overskriver min CSS med sine egne <strong> og <p> tags  ──────────────────────────────── */
 
 .produkt-beskrivelse p,
 .produkt-beskrivelse ol,
