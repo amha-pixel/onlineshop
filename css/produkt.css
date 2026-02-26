@@ -11,11 +11,11 @@
 .breadcrumb {
     padding: 12px 24px;
     font-size: 0.8rem;
-    color: #888888;
+    color: #000000;
 }
 
 .breadcrumb a {
-    color: #888888;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 8px;
-    border: 1px solid #cccccc;
+    border: 1px solid #000000;
 }
 
 /* Udsolgt-banner henover billedet */
@@ -86,7 +86,7 @@
 
 .produkt-brand {
     font-size: 0.85rem;
-    color: #888888;
+    color: #000000;
 }
 
 .produkt-navn {
@@ -97,14 +97,14 @@
 
 .produkt-type {
     font-size: 0.8rem;
-    color: #888888;
+    color: #000000;
 }
 
 /* ─── DIVIDER ───────────────────────────────────── */
 
 .divider {
     border: none;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #000000;
 }
 
 /* ─── PRIS ──────────────────────────────────────── */
@@ -125,7 +125,7 @@
 /* Originalprisen overstreget – kun synlig når "har-rabat" er aktiv */
 .produkt-pris-original {
     font-size: 1rem;
-    color: #999999;
+    color: #000000;
     text-decoration: line-through;
     font-weight: 400;
 }
@@ -159,7 +159,7 @@
 }
 
 .detalje-label {
-    color: #888888;
+    color: #000000;
     min-width: 120px;
 }
 
