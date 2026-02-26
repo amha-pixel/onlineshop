@@ -213,3 +213,16 @@
 .tilbage-link:hover {
     color: #000000;
 }
+
+/* ─── OVERRULE at API'ets HTML overskriver min CSS med sine egne <strong> og <p> tags  ──────────────────────────────── */
+
+.produkt-beskrivelse p,
+.produkt-beskrivelse ol,
+.produkt-beskrivelse li {
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.produkt-beskrivelse strong {
+    font-size: 0.9rem;
+}
