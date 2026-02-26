@@ -6,6 +6,7 @@
         <title>OnlineShop - Categories</title>
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/produktliste.css">
+        <script src="js/produktliste.js" defer></script>
     </head>
     <body>
 
@@ -18,133 +19,7 @@
         </header>
         <main>
             <div class="product_list_container">
-
-                <!-- Produkt 1570 | soldout: 0 | discount: 36% -->
-                <a href="produkt.html" 
-                   class="produkt-card" 
-                   data-id="1570"
-                   data-season="Fall"
-                   data-soldout="0"
-                   data-discount="36">
-                
-                    <img src="img/1570.webp" alt="Women Tennis Singlet" data-relid="1570">
-                
-                    <p class="produkt-card-type">
-                        <span data-field="articletype">Tshirts</span> | 
-                        <span data-field="brandname">Artengo</span>
-                    </p>
-                
-                    <h2 class="produkt-card-navn" data-field="productdisplayname">
-                        Women Tennis Singlet
-                    </h2>
-                
-                    <!-- Viser kun normalprisen -->
-                    <p class="produkt-card-pris" data-field="price">
-                        DKK 999,-
-                    </p>
-                
-                    <!-- Rabatpris gemt i dataen men usynlig -->
-                    <span class="skjult" data-field="discounted_price">DKK 639,-</span>
-                
-                    <!-- Udsolgt badge: skjult fordi soldout = 0 -->
-                    <span class="udsolgt skjult" data-field="soldout">Udsolgt</span>
-                
-                    <span class="produkt-card-link">Read More</span>
-                </a>
-            
-            
-                <!-- Produkt 1571 | soldout: 0 | discount: 37% -->
-                <a href="produkt.html" 
-                   class="produkt-card"
-                   data-id="1571"
-                   data-season="Fall"
-                   data-soldout="0"
-                   data-discount="37">
-            
-                    <img src="img/1571.webp" alt="Super Soft Sports Shoes" data-relid="1571">
-            
-                    <p class="produkt-card-type">
-                        <span data-field="articletype">Sports Shoes</span> | 
-                        <span data-field="brandname">Kalenji</span>
-                    </p>
-            
-                    <h2 class="produkt-card-navn" data-field="productdisplayname">
-                        Super Soft Sports Shoes
-                    </h2>
-            
-                    <p class="produkt-card-pris nedsat">
-                        <span class="produkt-card-pris-original" data-field="original_price">DKK 1199,-</span>
-                        <span data-field="price">DKK 755,-</span>
-                    </p>
-                    <span class="rabat-badge" data-field="discount">-37%</span>
-            
-                    <span class="udsolgt skjult" data-field="soldout">Udsolgt</span>
-            
-                    <span class="produkt-card-link">Read More</span>
-                </a>
-            
-            
-                <!-- Produkt 1578 | soldout: 1 | discount: null -->
-                <a href="produkt.html" 
-                   class="produkt-card udsolgt-card"
-                   data-id="1578"
-                   data-season="Fall"
-                   data-soldout="1"
-                   data-discount="">
-            
-                    <img src="img/1578.webp" alt="Good Stroke Red T-shirt" data-relid="1578">
-            
-                    <p class="produkt-card-type">
-                        <span data-field="articletype">Tshirts</span> | 
-                        <span data-field="brandname">Domyos</span>
-                    </p>
-            
-                    <h2 class="produkt-card-navn" data-field="productdisplayname">
-                        Good Stroke Red T-shirt
-                    </h2>
-            
-                    <!-- Ingen rabat, så kun én pris -->
-                    <p class="produkt-card-pris" data-field="price">
-                        DKK 499,-
-                    </p>
-            
-                    <!-- Udsolgt badge: vises fordi soldout = 1, ingen "skjult" klasse -->
-                    <span class="udsolgt" data-field="soldout">Udsolgt</span>
-            
-                    <span class="produkt-card-link">Read More</span>
-                </a>
-            
-            
-                <!-- Produkt 1580 | soldout: 0 | discount: 49% -->
-                <a href="produkt.html" 
-                   class="produkt-card"
-                   data-id="1580"
-                   data-season="Fall"
-                   data-soldout="0"
-                   data-discount="49">
-            
-                    <img src="img/1580.webp" alt="Women Cross-back Swimsuit" data-relid="1580">
-            
-                    <p class="produkt-card-type">
-                        <span data-field="articletype">Swimwear</span> | 
-                        <span data-field="brandname">Decathlon</span>
-                    </p>
-            
-                    <h2 class="produkt-card-navn" data-field="productdisplayname">
-                        Women Cross-back Swimsuit
-                    </h2>
-            
-                    <p class="produkt-card-pris nedsat">
-                        <span class="produkt-card-pris-original" data-field="original_price">DKK 999,-</span>
-                        <span data-field="price">DKK 510,-</span>
-                    </p>
-                    <span class="rabat-badge" data-field="discount">-49%</span>
-            
-                    <span class="udsolgt skjult" data-field="soldout">Udsolgt</span>
-            
-                    <span class="produkt-card-link">Read More</span>
-                </a>
-            
+                <!-- produkter tilføjes dynamisk via JS -->
             </div>
         </main>
         
