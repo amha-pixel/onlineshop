@@ -205,7 +205,7 @@
 .tilbage-link {
     display: inline-block;
     margin: 0 24px 32px 24px;
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: #888888;
     text-decoration: underline;
 }
