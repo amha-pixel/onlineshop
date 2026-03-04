@@ -4,12 +4,11 @@ const produktContainer = document.querySelector(".produkt-container");
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
+
 // Hent produktet fra API
 fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
   .then((response) => response.json())
   .then((product) => {
-    console.log(product);
-
     const rabatBadge = product.discount ? `<span class="rabat-badge">-${product.discount}%</span>` : "";
     const originalPris = product.discount ? `<span class="produkt-pris-original">DKK ${Math.round(product.price / (1 - product.discount / 100))},-</span>` : "";
     const udsolgtBanner = product.soldout === 1 ? `<span class="udsolgt-banner">Sold out</span>` : "";
