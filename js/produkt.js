@@ -10,7 +10,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
   .then((response) => response.json())
   .then((product) => {
     const rabatBadge = product.discount ? `<span class="rabat-badge">-${product.discount}%</span>` : "";
-    const originalPris = product.discount ? `<span class="produkt-pris-original">DKK ${Math.round(product.price / (1 - product.discount / 100))},-</span>` : "";
+    const originalPris = product.discount ? `<span class="produkt-pris-original"> ${Math.round(product.price / (1 - product.discount / 100))},-</span>` : "";
     const udsolgtBanner = product.soldout === 1 ? `<span class="udsolgt-banner">Sold out</span>` : "";
     const koebKnap = product.soldout === 1 ? `<button class="koeb-knap" disabled>Add to basket</button>` : `<button class="koeb-knap">Add to basket</button>`;
 
@@ -29,7 +29,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
 
         <div class="produkt-pris-wrapper">
           ${originalPris}
-          <span class="produkt-pris">DKK ${product.price},-</span>
+          <span class="produkt-pris"> ${product.price},-</span>
           ${rabatBadge}
         </div>
 

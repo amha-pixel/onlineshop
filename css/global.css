@@ -71,3 +71,26 @@ p {
 .skjult {
     display: none;
 }
+
+.site-nav a.active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo svg {
+    flex-shrink: 0;
+    position: relative;
+    top: -1px;
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000000;
+}
