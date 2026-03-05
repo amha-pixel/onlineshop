@@ -4,8 +4,6 @@ const productContainer = document.querySelector(".product_list_container");
 const params = new URLSearchParams(window.location.search);
 const season = params.get("season");
 
-// tjek at den rigtige sæson hentes console.log(season);  
-
 // Hent produkter fra API baseret på sæson
 fetch(`https://kea-alt-del.dk/t7/api/products?season=${season}`)
   .then((response) => response.json())
