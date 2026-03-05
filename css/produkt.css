@@ -1,11 +1,3 @@
-/* ════════════════════════════════════════════════
-   produkt.css
-   Styles til produkt.html
-   Husk at linke BEGGE filer i produkt.html:
-   <link rel="stylesheet" href="global.css">
-   <link rel="stylesheet" href="produkt.css">
-   ════════════════════════════════════════════════ */
-
 /* ─── BREADCRUMB ────────────────────────────────── */
 
 .breadcrumb {
@@ -70,7 +62,7 @@
     background: #c0392b;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.85rem;
+    font-size: 1rem;
     padding: 6px 14px;
     border-radius: 0 4px 4px 0;
     letter-spacing: 0.05em;
@@ -90,7 +82,7 @@
 }
 
 .produkt-navn {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -150,7 +142,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    font-size: 0.85rem;
+    font-size: 0.90rem;
 }
 
 .detalje-række {
@@ -170,8 +162,8 @@
 /* ─── BESKRIVELSE ───────────────────────────────── */
 
 .produkt-beskrivelse {
-    font-size: 0.85rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 2rem;
     color: #444444;
 }
 
@@ -183,7 +175,7 @@
     color: white;
     border: none;
     padding: 14px 24px;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     border-radius: 6px;
     cursor: pointer;
     letter-spacing: 0.05em;
@@ -205,7 +197,7 @@
 .tilbage-link {
     display: inline-block;
     margin: 0 24px 32px 24px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #888888;
     text-decoration: underline;
 }
@@ -219,10 +211,10 @@
 .produkt-beskrivelse p,
 .produkt-beskrivelse ol,
 .produkt-beskrivelse li {
-    font-size: 0.85rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
 .produkt-beskrivelse strong {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
