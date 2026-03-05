@@ -1,12 +1,12 @@
-/* ════════════════════════════════════════════════
-   produktliste.css
-   Styles til produktliste.html
-   Husk at linke BEGGE filer i produktliste.html:
-   <link rel="stylesheet" href="global.css">
-   <link rel="stylesheet" href="produktliste.css">
-   ════════════════════════════════════════════════ */
-
 /* ─── FORSIDEN: SÆSONER / KATEGORIER ───────────── */
+
+.produktliste-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px;
+    gap: 24px;
+}
+
 
 .sæsoner {
     display: grid;

@@ -55,7 +55,6 @@
 /* ─── TICKER ─── */
 .ticker-wrap {
   overflow: hidden;
-  border-bottom: 1px solid #000;
   padding: 10px 0;
   background: #c8472a;
   color: #fff;
@@ -76,7 +75,7 @@
   flex-shrink: 0;
 }
 
-.ticker span.sep { color: #666; }
+.ticker span.sep { color: #000; }
 
 @keyframes ticker {
   from { transform: translateX(0); }
@@ -92,7 +91,6 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 1px solid #000;
   padding-bottom: 12px;
   margin-bottom: 0;
 }
@@ -192,25 +190,6 @@
   transition: background 0.15s;
 }
 
-/* ─── FOOTER ─── */
-footer {
-  border-top: 1px solid #000;
-  padding: 20px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.75rem;
-  color: #888;
-}
-
-.footer-logo {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #000;
-  text-decoration: none;
-  font-family: 'Courier New', Courier, monospace;
-}
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 700px) {

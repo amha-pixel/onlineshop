@@ -4,6 +4,8 @@ const productContainer = document.querySelector(".product_list_container");
 const params = new URLSearchParams(window.location.search);
 const season = params.get("season");
 
+document.querySelector(".section-heading").textContent = season + " collection";
+
 // Hent produkter fra API baseret på sæson
 fetch(`https://kea-alt-del.dk/t7/api/products?season=${season}`)
   .then((response) => response.json())
@@ -16,7 +18,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products?season=${season}`)
           <a href="produkt.html?id=${product.id}" class="produkt-card">
             <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="${product.productdisplayname}">
             <h2 class="produkt-card-navn">${product.productdisplayname}</h2>
-            <p class="produkt-card-pris">${product.price}</p>
+            <p class="produkt-card-pris">${product.price},- </p>
             ${rabatBadge}
             ${udsolgt}
             <span class="produkt-card-link">Read More</span>
